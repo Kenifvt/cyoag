@@ -1,2 +1,5 @@
 # cyoag
-A Choose your Own Adventure Game
+A Text and Visual based choose your own Adventure Game.
+
+Made for my Web Technologies coursework
+
