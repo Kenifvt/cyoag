@@ -28,7 +28,7 @@ function reset_counter() {
 
 //Function to reset count and return to main menu
 function mainMenu() {
-        window.location.href = "../MainPage.html" ;
+        window.location.href = "../index.html" ;
         reset_counter();
 }
 
