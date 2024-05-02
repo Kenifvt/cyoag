@@ -1,0 +1,80 @@
+<html>
+<head>
+<title>Dragons Den</title>
+<style>
+body {
+	background-image: url('../images/farmerback.png');
+	background-repeat: no-repeat;
+	background-attachment: fixed;  
+	background-size: fill;
+}
+</style>
+
+<script src = "../javascript.js"></script>
+
+<link rel="stylesheet" href="../Style.css">
+</head>
+
+<body>
+<div id = "farmer_intro">
+<main>
+	<section class = "dialogue_box">
+		<h2>Hello Traveller! My name is Duke, i'm a local farmer at these woods and i've been gathering up firewood for the community <br> lodge to use for tonights bonfire.
+			<br> If it's not too much of an ask, could you spare a hand and help me out?
+		</h2>
+	</section>
+</main>
+
+<div class = "choiceList">
+
+	
+	<button class = "button" onClick = "farmerhelp()">Help Farmer</button>
+	<button class = "button" onClick = "farmerignore()">Reject Farmer</button>
+
+    <button class = "button" onClick = "mainMenu()">Main Menu</button>
+
+</div>
+
+</div>
+
+<div id = "farmer_helped">
+	<main>
+		<section class = "dialogue_box">
+			<h2>Thank you adventurer, you have my gratitude. May you be blessed throughout your journey, wherever that may be... <br>
+				As a thanks, I give to you my word of advice; don't trust those who are willing to trade you for their secrets. <br>
+				Also take this <i>bread</i> on your travels.
+			</h2>
+		</section>
+	</main>
+	
+	<div class = "choiceList">
+	
+		
+		<a href = "ForestPage.html" class = "button">Continue</a>
+	
+		<button class = "button" onClick = "mainMenu()">Main Menu</button>
+	
+	</div>
+	
+</div>
+
+<div id = "farmer_ignored">
+	<main>
+		<section class = "dialogue_box">
+			<h2>Very well, I wish you the best on your journey onwards.. <br>
+				Take this <i>bread</i> on your travels.
+			</h2>
+		</section>
+	</main>
+	
+	<div class = "choiceList">
+	
+		
+		<a href = "ForestPage.html" class = "button">Continue</a>
+	
+		<button class = "button" onClick = "mainMenu()">Main Menu</button>
+	
+	</div>
+</div>
+
+</body>

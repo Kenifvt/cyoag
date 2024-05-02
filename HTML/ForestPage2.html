@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>Enchanted Forest</title>
+<style>
+body {
+	background-image: url('../images/forest2.png');
+	background-repeat: no-repeat;
+	background-attachment: fixed;  
+	background-size: fill;
+}
+</style>
+
+<script src = "../javascript.js"></script>
+
+<link rel="stylesheet" href="../Style.css">
+</head>
+
+<body>
+<div id = "forest_start">
+<main>
+	<section class = "dialogue_box">
+		<h2>Oi oi! Who are you? And more importantly what are you doing around these parts, you shouldn't be here. <br>
+			There's a dark secret to these woods and it has taken a number of wandering souls like you, you best leave these <br>
+			woods if you know whats good for you.
+		</h2>
+	</section>
+</main>
+
+	<div class = "choiceList">
+
+		<button class = "button" onClick = forest_talk()>Who do you think you are?</button>
+		<a href = "ForestPageDoor.html" class = "button">Walk towards the noise</a>
+		<a href = "Forest_ending.html" class = "button">Go further into the woods</a>
+
+		<button class = "button" onClick = "mainMenu()">Main Menu</button>
+
+	</div>
+</div>
+
+<div id = "forest_intro">
+	<main>
+		<section class = "dialogue_box">
+			<h2>The name's Gordon, I'm a sorcerer from the south. I just happen to be investigating the area to find the lost souls. <br>
+				I figured the ominous noises were enough to drive off anyone from coming here but I stand corrected.
+			</h2>
+		</section>
+	</main>
+	
+		<div class = "choiceList">
+			
+			<button class = "button", onClick = "forest_noise()">What's that noise?</button>
+			<a href = "Forest_ending.html" class = "button">Ignore him and walk further into the woods</a>
+			<button class = "button" onClick = "mainMenu()">Main Menu</button>
+	
+		</div>
+	</div>
+
+<div id = "forest_intro2">
+	<main>
+		<section class = "dialogue_box">
+			<h2>That noise is the forbidden door within the forest, rumour has it, it can send you to a distant lands<br>
+				but be wary as it can send you to your utter demise with no way of returning. The door is only accessible <br>
+				via a puzzle which reads <i>"Convert from representation to a numeral"</i>.
+			</h2>
+		</section>
+	</main>
+	
+		<div class = "choiceList">
+			
+			<a href = "ForestPageDoor.html" class = "button">Walk towards the sounds of the door</a>
+			<button class = "button" onClick = "mainMenu()">Main Menu</button>
+	
+		</div>
+</div>
+
+</body>

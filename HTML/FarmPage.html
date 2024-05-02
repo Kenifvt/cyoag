@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<head>
+<title>Farm</title>
+<style>
+body {
+	background-image: url('../images/farmback.png');
+	background-repeat: no-repeat;
+	background-attachment: fixed;  
+	background-size: fill;
+}
+</style>
+
+<script src = "../javascript.js"></script>
+
+    <div><img src="../images/minilogo.png" alt="Main Page Logo" style="width:457px;height:82px"; ></div>
+
+<link rel="stylesheet" href="../Style.css">
+</head>
+
+
+<body>
+<div id ="farm_start">
+
+	<main>
+		<section class = "storyline_box">
+			<h2>You awaken amidst a field of swaying grass, the air alive with bird calls and the gentle rustle of the wind. Eager to begin your adventure, <br>you glance around, feeling the thrill of the unknown beckoning you forward. What do you do first adventurer? </h2>
+		</section>
+	</main>
+	<div class = "choiceList">
+    	<button class ="button" onClick ="closefarm_start()">Enjoy the View</button>
+		<a href="FarmPage2.html" class = "button">Look around for residents.</a>
+    	<a href="../MainPage.html" class = "button">Main Menu</a>
+
+	</div>
+</div>
+
+
+<div id ="farm_alt">
+
+	<main>
+		<section class = "storyline_box">
+			<h3>You stand there and appreciate scenery, the faint noise of footsteps can be heard in the distance.</h3>
+		</section>
+	</main>
+	<div class = "choiceList">
+		<a href="FarmPage2.html" class = "button">Look around for residents.</a>
+    	<button class = "button" onClick = "mainMenu()">Main Menu</button>
+
+	</div>
+
+</div>
+
+
+</body>

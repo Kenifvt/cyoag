@@ -1,0 +1,91 @@
+<html>
+<head>
+<title>CYOAG Main Page</title>
+<style>
+body {
+	background-image: url('../images/forest.png');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: fill;
+}
+</style>
+
+<script src = "../javascript.js"></script>
+<link rel="stylesheet" href="../Style.css">
+</head>
+<body>
+
+<div id = "door_unlocked">
+	
+<a href = "RuinsPage.html">
+		<div class = "door">
+  			<img id = unlocked_door src="../images/door1.png" alt="Main Page Logo" style="width:400px;height:600px"; ></div>
+		</div>
+	</a>
+
+	<main>
+		<section class = "storyline_box">
+			<h3>The door flashes as if to signal acceptance and a faint image of the other location starts to appear on the door. <br>
+				(Click on the door to go through)
+			</h3>
+		</section>
+	</main>
+</div>
+
+<div id = "door_locked">
+	
+	<div class = "door">
+		<div><img src="../images/door1.png" alt="Main Page Logo" style="width:400px;height:600px"; ></div>
+    </div>	
+	
+	<main>
+		<section class = "storyline_box">
+			<h2>At the end of the line, there stands a door, eminating loud noise, with numbers engraved along the frame. These numbers read to be: <br>
+				<u> 100010101 </u> <br>
+				What could this represent? There are pressure slabs infront of the door. Choose wisely!
+			</h2>
+		</section>
+	</main>
+	
+		<div class = "choiceList">
+			
+			<button class = "button" onClick = "incorrect_answer()">201</button>
+			<button class = "button" onClick = "incorrect_answer()">57</button>
+			<button class = "button" onClick = "unlock_door()">277</button>
+			<button class = "button" onClick = "incorrect_answer()">1022</button>
+	
+	
+		</div>
+
+</div>
+
+<div id = "door_incorrect">
+	
+	<div class = "door">
+		<div><img src="../images/door1.png" alt="Main Page Logo" style="width:400px;height:600px"; ></div>
+    </div>	
+	
+	<main>
+		<section class = "storyline_box">
+			<h2>Nothing happens, maybe try a different answer?<br>
+				<u> 100010101 </u> <br>
+				What could this represent? There are pressure slabs infront of the door. Choose wisely!
+			</h2>
+		</section>
+	</main>
+	
+		<div class = "choiceList">
+
+			<button class = "button" onClick = "incorrect_answer()">201</button>
+			<button class = "button" onClick = "incorrect_answer()">57</button>
+			<button class = "button" onClick = "unlock_door()">277</button>
+			<button class = "button" onClick = "incorrect_answer()">1022</button>
+	
+	
+	
+		</div>
+
+</div>
+
+
+</body>

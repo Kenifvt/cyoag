@@ -1,0 +1,55 @@
+<html>
+<head>
+<title>Dragons Den</title>
+<style>
+body {
+	background-image: url('../images/dragonslair2.png');
+	background-repeat: no-repeat;
+	background-attachment: fixed;  
+	background-size: fill;
+}
+</style>
+
+<script src = "../javascript.js"></script>
+<link rel="stylesheet" href="../Style.css">
+</head>
+
+<body>
+
+
+<div id = "dragons_choice">
+	<main>
+		<section class = "dialogue_box">
+			<h2>
+				Hello traveller, it seems you've come to the end of your adventure. I can grant you one wish however, <br>should you chose to accept it 
+				I will reveal to you your true ending. From your travels you were met with many people, <br>faced with many choices, this will determine your final stand.
+			</h2>
+		</section>
+	</main>	
+	<div id="counts-container">HELLO</div>
+	<div class = "choiceList">
+		<button class = "button" onClick = "determine_ending()"> Determine my fate, I'm ready </button>
+		<a href = "DragonsDen.html" class = "button">Move forward</a>
+		<button id = "leroy" class = "button" onClick = "mainMenu()">Main Menu</button>
+
+	</div>
+</div>
+
+<div id = "mid_ending">
+	<main>
+		<section class = "dialogue_box">
+			<h2>
+				It seems as though you have shown great balance throughout your journey, I cannot make demise or riches of this.
+				Begone Traveller.
+			</h2>
+		</section>
+	</main>	
+
+	<div class = "choiceList">
+		<button class = "button" onClick = "mainMenu()">Main Menu</button>
+
+	</div>
+</div>
+
+
+</body>

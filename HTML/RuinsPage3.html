@@ -1,0 +1,56 @@
+<html>
+<head>
+<title>Ruins</title>
+<style>
+body {
+	background-image: url('../images/ruinsbackground3.png');
+	background-repeat: no-repeat;
+	background-attachment: fixed;  
+	background-size: fill;
+}
+</style>
+
+<script src = "../javascript.js"></script>
+<link rel="stylesheet" href="../Style.css">
+</head>
+
+<body>
+
+<div id = orc_plead>
+	<main>
+		<section class = "dialogue_box">
+			<h2><i>*Thump* You bump into an orc </i><br> 
+				Sorry, i've been chasing that damned goblin everywhere, he's stole my food and i'm starving.
+				I know, we've only met but could you spare some extra food? I don't have anything to offer but I can show you the way to the castle.
+			</h2>
+		</section>
+	</main>	
+
+	<div class = "choiceList">
+		<button class = "button" onClick = "help_orc()">Offer farmer's bread</button>
+		<a href = "DragonsDen.html" class = "button">Refuse and walk away</a>
+		<button class = "button" onClick = "mainMenu()">Main Menu</button>
+
+	</div>
+</div>
+
+<div id = orc_reward>
+	<main>
+		<section class = "dialogue_box">
+			<h2>I am in your debt, as promised i'll let you know of what's ahead. There is a dragon's den filled with gold that you can <br>
+				only have witnessed in your dreams. But beware, this is the end for some. Trust in your pure heart as you enter<br>
+				and you shall prevail without a doubt.
+			</h2>
+		</section>
+	</main>	
+
+	<div class = "choiceList">
+		<a href = "DragonsDen.html" class = "button">Head towards the den</a>
+		<button class = "button" onClick = "mainMenu()">Main Menu</button>
+
+	</div>
+</div>
+
+
+
+</body>

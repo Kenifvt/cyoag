@@ -1,0 +1,98 @@
+ 
+.logo {
+  display:block;
+  margin: 0 auto;
+  width: 20%;
+  padding:100px;
+}
+
+.miniLogo {
+  display: block;
+}
+
+.storyline_box {
+  position: fixed;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  left: 5%;
+  bottom: 10%;
+  color: rgb(56, 51, 51);
+  background-color: lightgrey;
+  border-radius:20px;
+  padding: 10px 20px;
+}
+
+.dialogue_box {
+  position: fixed;
+  font-family: 'Courier New', Courier, monospace;
+  left: 5%;
+  bottom: 10%;
+  color: rgb(182, 153, 58);
+  border-radius:20px;
+  padding: 10px 20px;
+}
+
+.door {
+  display:block;
+  margin: 0 auto;
+  width: 20%;
+  padding:200px;
+}
+
+.navbar {	
+position:fixed;
+bottom: 50px;
+left: 0px;
+width: 100%;
+text-align:center;
+height: 150px;
+}
+
+.button {
+  background-color: rgb(56, 51, 51); /* Green */
+  border: none;
+  color: lightgrey;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  cursor: pointer;
+  border-radius: 20px;
+
+}
+
+.navbar a {
+  color: #FFFFFF;
+  text-decoration: none;
+  border-radius: 10px;
+  font-size: 25px;
+  padding: 20px;
+  margin-right: 100px;
+  margin-left: 100px
+}
+
+.choiceList {
+	position: fixed;
+	display: grid;
+	bottom: 50px;
+	grid-template-columns: repeat(4, 1fr);
+	text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-size: 18px;
+  justify-items: center;
+  align-content: space-evenly;
+  align-items: center;
+  width:100%;
+}
+
+
+#farm_alt, #farmer_helped, #farmer_ignored, #farm_help, #forest_intro, #forest_intro2, #door_unlocked, #door_incorrect, #mid_ending, #orc_reward{
+  display:none;
+}
+
+
+
+.navbar a:hover, .navbar a:active{background-color: #3B508F;}
+
+.logo:hover{transform:scale(1.1);}
