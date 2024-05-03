@@ -11,10 +11,11 @@ body {
 </style>
 
 <script src = "../javascript.js"></script>
+<script src = "../audio.js"></script>
 <link rel="stylesheet" href="../Style.css">
 </head>
 <body>
-
+<audio id = "portal_audio" src = "../AUDIO/portal_audio.mp4"></audio>
 <div id = "door_unlocked">
 	
 <a href = "RuinsPage.html">
@@ -50,9 +51,9 @@ body {
 		<div class = "choiceList">
 			
 			<button class = "button" onClick = "incorrect_answer()">201</button>
-			<button class = "button" onClick = "incorrect_answer()">57</button>
+			<button class = "button" onClick = "incorrect_answer2()">57</button>
 			<button class = "button" onClick = "unlock_door()">277</button>
-			<button class = "button" onClick = "incorrect_answer()">1022</button>
+			<button class = "button" onClick = "incorrect_answer3()">1022</button>
 	
 	
 		</div>
@@ -67,7 +68,34 @@ body {
 	
 	<main>
 		<section class = "storyline_box">
-			<h2>Nothing happens, maybe try a different answer?<br>
+			<h2>You hear the sound the door get louder as if something's trying to get in but nothing happens, maybe try a different answer?<br>
+				<u> 100010101 </u> <br>
+				What could this represent? There are pressure slabs infront of the door. Choose wisely!
+			</h2>
+		</section>
+	</main>
+	
+		<div class = "choiceList">
+
+			<button class = "button" onClick = "incorrect_answer2()">57</button>
+			<button class = "button" onClick = "unlock_door()">277</button>
+			<button class = "button" onClick = "incorrect_answer3()">1022</button>
+	
+	
+	
+		</div>
+
+</div>
+
+<div id = "door_incorrect2">
+	
+	<div class = "door">
+		<div><img src="../images/door1.png" alt="Main Page Logo" style="width:400px;height:600px"; ></div>
+    </div>	
+	
+	<main>
+		<section class = "storyline_box">
+			<h2>The door remains shut and nothing happens with your answer, maybe try a different answer?<br>
 				<u> 100010101 </u> <br>
 				What could this represent? There are pressure slabs infront of the door. Choose wisely!
 			</h2>
@@ -77,9 +105,36 @@ body {
 		<div class = "choiceList">
 
 			<button class = "button" onClick = "incorrect_answer()">201</button>
-			<button class = "button" onClick = "incorrect_answer()">57</button>
 			<button class = "button" onClick = "unlock_door()">277</button>
-			<button class = "button" onClick = "incorrect_answer()">1022</button>
+			<button class = "button" onClick = "incorrect_answer3()">1022</button>
+	
+	
+	
+		</div>
+
+</div>
+
+<div id = "door_incorrect3">
+	
+	<div class = "door">
+		<div><img src="../images/door1.png" alt="Main Page Logo" style="width:400px;height:600px"; ></div>
+    </div>	
+	
+	<main>
+		<section class = "storyline_box">
+			<h2>You feel the door pulling you in but nothing happens, maybe try a different answer?<br>
+				<u> 100010101 </u> <br>
+				What could this represent? There are pressure slabs infront of the door. Choose wisely!
+			</h2>
+		</section>
+	</main>
+	
+		<div class = "choiceList">
+
+			<button class = "button" onClick = "incorrect_answer()">201</button>
+			<button class = "button" onClick = "incorrect_answer2()">57</button>
+			<button class = "button" onClick = "unlock_door()">277</button>
+
 	
 	
 	

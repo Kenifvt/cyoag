@@ -11,11 +11,14 @@ body {
 </style>
 
 <script src = "../javascript.js"></script>
+<script src = "../audio.js"></script>
 
 <link rel="stylesheet" href="../Style.css">
 </head>
 
 <body>
+
+<audio id = "wood_cut_audio" src = "../AUDIO/wood_cut.mp4"></audio>
 <div id = "farmer_intro">
 <main>
 	<section class = "dialogue_box">
@@ -50,7 +53,7 @@ body {
 	<div class = "choiceList">
 	
 		
-		<a href = "ForestPage.html" class = "button">Continue</a>
+		<button class = "button" onClick = "farmToforest()">Continue</button>
 	
 		<button class = "button" onClick = "mainMenu()">Main Menu</button>
 	

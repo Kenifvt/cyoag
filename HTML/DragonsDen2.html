@@ -11,11 +11,13 @@ body {
 </style>
 
 <script src = "../javascript.js"></script>
+<script src = "../audio.js"></script>
 <link rel="stylesheet" href="../Style.css">
 </head>
 
 <body>
 
+<audio id = "fire_audio" src = "../AUDIO/fire_ending.mp4"></audio>
 
 <div id = "dragons_choice">
 	<main>
@@ -26,10 +28,8 @@ body {
 			</h2>
 		</section>
 	</main>	
-	<div id="counts-container">HELLO</div>
 	<div class = "choiceList">
 		<button class = "button" onClick = "determine_ending()"> Determine my fate, I'm ready </button>
-		<a href = "DragonsDen.html" class = "button">Move forward</a>
 		<button id = "leroy" class = "button" onClick = "mainMenu()">Main Menu</button>
 
 	</div>

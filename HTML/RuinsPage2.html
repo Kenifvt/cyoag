@@ -11,11 +11,14 @@ body {
 </style>
 
 <script src = "../javascript.js"></script>
+<script src = "../audio.js"></script>
 <link rel="stylesheet" href="../Style.css">
 </head>
 
 <body>
+<audio id = "whoosh_audio" src = "../AUDIO/whoosh_audio.mp4"></audio>
 
+<div id = "goblin_intro">
 	<main>
 		<section class = "dialogue_box">
 			<h2>What's up chump, why the puzzled face? Anyway, you look like you're new around here, well you're in luck bud. Ive got <br> some tips
@@ -26,9 +29,29 @@ body {
 
 	<div class = "choiceList">
 		<button class = "button" onClick ="trust_goblin()">Give him what you've got</button>
-		<a href = "RuinsPage3.html" class = "button">Refuse and walk away</a>
+		<button class = "button" onClick ="ignore_goblin()">Refuse and walk away</button>
 		<button class = "button" onClick = "mainMenu()">Main Menu</button>
 
 	</div>
+</div>
+
+<div id = "goblin_scam">
+	
+	<main>
+		<section class = "dialogue_box">
+			<h2>*woosh* <br> The goblin, takes your belongings and dashes off into the distance. Maybe you shouldn't of trusted his <i>"secret"..</i>
+
+			</h2>
+		</section>
+	</main>	
+
+	<div class = "choiceList">
+		<a href = "RuinsPage3.html" class = "button">Continue on</a>
+		<button class = "button" onClick = "mainMenu()">Main Menu</button>
+
+	</div>
+
+</div>
+
 
 </body>

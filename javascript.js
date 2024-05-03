@@ -39,6 +39,7 @@ function closefarm_start() {
 }
 
 function farmerhelp() {
+    play_wood_cut();
     increment_good_count();
     document.getElementById("farmer_intro").style.display = "none";
     document.getElementById("farmer_helped").style.display = "block";
@@ -48,6 +49,10 @@ function farmerignore() {
     increment_bad_count();
     document.getElementById("farmer_intro").style.display = "none";
     document.getElementById("farmer_ignored").style.display = "block";
+}
+
+function farmToforest() {
+    window.location.href = "ForestPage.html" ;
 }
 
 function forest_talk() {
@@ -61,18 +66,42 @@ function forest_noise() {
 }
 
 function unlock_door() {
+    play_portal_sound();
     document.getElementById("door_locked").style.display = "none";
     document.getElementById("door_incorrect").style.display = "none";
+    document.getElementById("door_incorrect2").style.display = "none";
+    document.getElementById("door_incorrect3").style.display = "none";
     document.getElementById("door_unlocked").style.display = "block";
 }
+
+
 function incorrect_answer() {
     document.getElementById("door_locked").style.display = "none";
+    document.getElementById("door_incorrect2").style.display = "none";
+    document.getElementById("door_incorrect3").style.display = "none";
     document.getElementById("door_incorrect").style.display = "block";
 }
 
+function incorrect_answer2() {
+    document.getElementById("door_locked").style.display = "none";
+    document.getElementById("door_incorrect").style.display = "none";
+    document.getElementById("door_incorrect3").style.display = "none";
+    document.getElementById("door_incorrect2").style.display = "block";
+}
+
+function incorrect_answer3() {
+    document.getElementById("door_locked").style.display = "none";
+    document.getElementById("door_incorrect").style.display = "none";
+    document.getElementById("door_incorrect2").style.display = "none";
+    document.getElementById("door_incorrect3").style.display = "block";
+    
+}
+
 function trust_goblin() {
+    play_whoosh_sound();
     increment_good_count();
-    window.location.href = "RuinsPage2b.html" ;
+    document.getElementById("goblin_intro").style.display = "none";
+    document.getElementById("goblin_scam").style.display = "block";
 }
 
 function ignore_goblin() {
@@ -81,9 +110,16 @@ function ignore_goblin() {
 }
 
 function help_orc() {
+    play_grunt_sound();
     increment_good_count();
     document.getElementById("orc_plead").style.display = "none";
     document.getElementById("orc_reward").style.display = "block";
+}
+
+function ignore_orc() {
+    increment_bad_count();
+    window.location.href = "DragonsDen.html" ;
+
 }
 
 function pet_dragon() {
@@ -92,7 +128,7 @@ function pet_dragon() {
 }
 
 function scare_dragon() {
-    increment_good_count();
+    increment_bad_count();
     window.location.href = "DragonsDen2.html" ;
 }
 
@@ -103,16 +139,17 @@ function determine_ending() {
     }
 
     else if (good_counter == bad_counter) {
+        play_fire_sound();
         document.getElementById("dragons_choice").style.display = "none";
         document.getElementById("mid_ending").style.display = "block";
     }
 
-    else {
-        document.getElementById("dragons_choice").style.display = "none";
-        document.getElementById("bad_ending").style.display = "none";
+    else if (good_counter < bad_counter){
+        window.location.href = "True_Bad_ending.html";
     }
 }
 
+//Counter Display
 function displayCounts() {
     var countsContainer = document.getElementById("counts-container");
     countsContainer.innerHTML = "Good Counter: " + good_counter + "<br>Bad Counter: " + bad_counter;

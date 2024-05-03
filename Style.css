@@ -10,6 +10,24 @@
   display: block;
 }
 
+.intro_title {
+  text-align:center; 
+  color: white; 
+  font-size: 50; 
+  text-decoration: underline;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.intro_body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center; 
+  color:white; 
+  font-size: 40; 
+  margin-left: 150px; 
+  margin-right: 150px;
+}
+
+
 .storyline_box {
   position: fixed;
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -86,8 +104,19 @@ height: 150px;
   width:100%;
 }
 
+.creditsInfobar {
+  text-align:center;
+}
 
-#farm_alt, #farmer_helped, #farmer_ignored, #farm_help, #forest_intro, #forest_intro2, #door_unlocked, #door_incorrect, #mid_ending, #orc_reward{
+.creditsLogo {
+  padding: 5px;
+  display:inline-block;
+  margin-left: 21%;
+  bottom:50px
+}
+
+#farm_alt, #farmer_helped, #farmer_ignored, #farm_help, #forest_intro, #forest_intro2, #door_unlocked, #door_incorrect, #door_incorrect2, 
+#door_incorrect3, #goblin_scam, #mid_ending, #orc_reward, #bad_ending{
   display:none;
 }
 
