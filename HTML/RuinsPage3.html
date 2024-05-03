@@ -11,11 +11,12 @@ body {
 </style>
 
 <script src = "../javascript.js"></script>
+<script src = "../audio.js"></script>
 <link rel="stylesheet" href="../Style.css">
 </head>
 
 <body>
-
+<audio id = "grunt_audio" src = "../AUDIO/grunt_audio.mp4"></audio>
 <div id = orc_plead>
 	<main>
 		<section class = "dialogue_box">
@@ -27,8 +28,8 @@ body {
 	</main>	
 
 	<div class = "choiceList">
+		<button class = "button" onClick = "ignore_orc()">Refuse and walk away</a>
 		<button class = "button" onClick = "help_orc()">Offer farmer's bread</button>
-		<a href = "DragonsDen.html" class = "button">Refuse and walk away</a>
 		<button class = "button" onClick = "mainMenu()">Main Menu</button>
 
 	</div>

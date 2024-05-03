@@ -10,11 +10,19 @@ body {
 }
 </style>
 
+<audio id = "forest_audio" src = "../AUDIO/forest_audio.mp4"></audio>
+
+<link rel="stylesheet" href="../Style.css">
+<script src = "../audio.js"></script>
 <script src = "../javascript.js"></script>
 
 <link rel="stylesheet" href="../Style.css">
 </head>
 
+
+<body>
+
+	
 <main>
 	<section class = "storyline_box">
 		<h2>You continue onwards and arrive in a deep forest, you hear the sound of creatures scuttering around, as well as an eerie noise <br>looming in the near distance. </h2>
@@ -28,3 +36,13 @@ body {
 	<button class = "button" onClick = "mainMenu()">Main Menu</button>
 
 </div>
+
+</body>
+
+</html>
+
+<script> 
+	window.onload = function() {
+		play_forest();
+	}
+</script>
